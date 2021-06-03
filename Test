@@ -1,0 +1,22 @@
+dream:
+  department1:
+    names:
+      - Olya:4
+      - Dmitry: 3
+      - Ivan: 2
+    office:
+      - accountant
+
+  department2:
+    names:
+      - Roman: 4
+    office:
+      - legal
+  department3:
+    names:
+      - Olya: 1
+    office:
+      - legal
+  department4:
+  department5:
+  department6:
