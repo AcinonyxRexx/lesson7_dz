@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: cp /boxfuse-sample-java-war-hello/target/hello-1.0.war /tmp/docker/
     volumes:
       - warvolume:/tmp/docker/
 
@@ -13,9 +12,11 @@ services:
     image: tomcat:9
     ports:
       - "8081:8080"
-    volumes:
-      - warvolume:/var/lib/tomcat9/webapps/
-    command: ["catalina.sh", "run"]
+    volumes_from:
+      - builder
+    command: >
+      bash -c  "cp /tmp/docker/hello-1.0.war /var/lib/tomcat9/webapps/
+      && catalina.sh run"
 
 volumes:
   warvolume:
