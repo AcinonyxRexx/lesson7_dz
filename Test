@@ -1,22 +1,45 @@
+---
 dream:
   department1:
     names:
-      - Olya:4
+      - Olya: 4
       - Dmitry: 3
       - Ivan: 2
     office:
       - accountant
-
+    wages_grade: 1st
   department2:
     names:
       - Roman: 4
+      - Maxim: 2
     office:
       - legal
+      - driver
+    average age: 30-
+    wages_grade: 3rd
   department3:
     names:
       - Olya: 1
+      - Ivan: 1
+      - Nikolay: 1
     office:
       - legal
+      - builder
+    wages_grade: 3rd
   department4:
+    names:
+      - Yulya: 5
+    office:
+      - assistant
+    average age: 30+
+    wages_grade: 3rd
   department5:
+    average age: 55+
+    wages_grade: 2nd
   department6:
+    names:
+      - Igor Viktorovich: 1
+    office:
+      - security
+    average age: 50+
+    wages_grade: 3rd
